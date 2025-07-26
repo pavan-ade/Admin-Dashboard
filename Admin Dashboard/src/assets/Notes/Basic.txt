@@ -1,2 +1,40 @@
-1) what is vue ?
+1. what is vue ?
 ans : 
+   => Vue is a progressive js framework used for building user-interface and 
+      single-page-applications(SPA).
+   => vue extends html with directives, enabling dynamic and interactive web experiences.
+   => vue is desing for flexible, making it easy to integrate into project, from simple
+      views to complex web apps, and it focuses on the view layer.
+   ==========================================================
+2. what is a single-page-application ?
+ans :
+   => SPA is a type of web-application that interacts with the user by dynamically
+      rewritting current page rather than entirely new page from server.
+   => it achive by using repoad the particular DOM node instance of the loading entire DOm Strucure.
+   =================================================
+3. what is component in vue ? How can we create a component?
+ans :
+   => compoent in vue is a reusable piece of the code that signifies a part of the userinterface.
+   => Component make simpiler to handle complex applications by splitting them down into minor, controllable pieces.
+   creating a component:
+      => create a new component by defining it with 'template', 'script' and 'style'.
+         eg:
+            <script setup lang="ts">
+            </script>
+
+            <template>
+               <h1>Hello World </h1>
+            </template>
+
+            <style scoped>
+            </style>
+
+      => Register the component in the vue instance or another component where you want to
+         use it.
+         
+         eg:
+            import HelloWorld from './components/HelloWorld.vue'
+      => Use the Component in your template with its custom tag.
+         eg:
+            <HelloWorld/>
+     
